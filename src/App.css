@@ -1,0 +1,629 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	background: #F2F2F2;
+}
+.center {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+p#post_time {
+	font-size: 13px;
+}
+.down {
+	transform: translate(0px, -65px);
+}
+.up {
+	transform: translate(0px, 0px);
+}
+header {
+	background: white;
+	top: 0;
+	position: fixed;
+	transform: translate(0px, 0px);
+ 	bottom: initial;
+	box-shadow: 0 5px 5px rgba(182, 182, 182, 0.75);
+ 	right: 0;
+  left: 0;
+	z-index: 1;
+}
+.navbar-default {
+  background: none;
+  margin-bottom: 0;
+  border: none;
+}
+.navbar-nav {
+	margin: auto;
+	width: 100%;
+}
+.navbar {
+  min-height: 40px;
+}
+header .header-top {
+	border-bottom: 1px solid #DDD;
+	height: 65px;
+}
+header .header-left {
+	height: 100%;
+	float: left;
+}
+header .header-left .logo {
+	position: relative;
+  transform: translate(0%, 25%);
+	float: left;
+	width: 160px;
+	height: 100%;
+}
+header .header-left img {
+	width: 160px;
+}
+header form	{
+	float: left;
+	height: 100%;
+	position: relative;
+	margin-left: 20px;
+}
+header form input[type="submit"] {
+	position: absolute;
+	top: 50%;
+	transform: translate(0, -50%);
+	text-indent: -9999px;
+	border: 0;
+	height: 40px;
+	width: 40px;
+	outline: none;
+	background: transparent url('https://digiday.com/wp-content/themes/digiday/static/images/icon_search.svg') center/24px no-repeat;
+}
+header form input[type="text"] {
+	border: none;
+	outline: none;
+	position: absolute;
+	top: 50%;
+	transform: translate(25%, -50%);
+}
+header .header-right {
+	float: right;
+	height: 100%;
+  z-index: 1;
+}
+header .header-right .account {
+	list-style: none;
+}
+header .account li {
+	float: left;
+	height: 100%;
+  line-height: 65px;
+	margin-left: 10px;
+}
+header .account .dropdown .btn-default {
+	border-radius: 20px;
+	outline: none;
+}
+header .account a {
+	text-decoration: none;
+	color: black;
+}
+header .account a.post:hover {
+  background: #1e88e5;
+}
+header .account .post {
+  	padding: 7px 25px;
+    background: #2fb5fa;
+  	border-radius: 20px;
+  	color: white;
+}
+header .menu ul {
+	list-style: none;
+}
+header .menu li {
+	padding: 5px 10px;
+	display: inline-block;
+}
+header .menu a {
+	text-decoration: none;
+	color: #34495e;
+}
+#navbar-content ul li a {
+  padding: 10px 15px 10px 0;
+}
+#navbar-content ul li a:hover {
+  color: #2FB5FA;
+}
+.wellcome {
+  background: url('https://spiderum.com/assets/images/categories/landing-bg.png') left -24px center no-repeat;
+  background-size: contain;
+  background-position: center;
+  height: 480px;
+  position: relative;
+	margin-top: 105px;
+}
+.wellcome .center {
+  left: 0%;
+	padding-left: 20px;
+  transform: translate(0%, -50%);
+}
+.wellcome .content .btn-primary {
+	outline: none;
+	padding: 10px 20px;
+	border: none;
+	background: #2fb5fa;
+	border-radius: 20px;
+}
+main .panel, main .sidebar {
+  margin-top: 10px;
+  background: none;
+}
+main .panel ul {
+  list-style: none;
+}
+main .panel ul li {
+	transition: background 1s linear;
+  padding: 8px;
+  color: #99A3AD;
+}
+main .panel ul li:hover {
+  color: black;
+}
+main .panel ul li.hot span{
+	color: #0D8BD0;
+}
+main .panel ul li.hot {
+	background: white;
+	border-radius: 1px;
+}
+main .panel ul span {
+  font-size: 15px;
+  margin-right: 8px;
+}
+.inner {
+  padding: 15px 20px;
+  background: white;
+  margin-bottom: 10px;
+	border-radius: 3px;
+	box-shadow: 0 0.5px 1px rgba(0,0,0,0.25);
+}
+.inner h3#title {
+  font-size: 20px;
+  font-weight: bold;
+}
+.inner .btn {
+  margin-left: 5px;
+}
+.author {
+  display: flex;
+}
+.author .avatar {
+  width: 36px;
+  height: 36px;
+  margin-right: 10px;
+}
+.author .avatar img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.inner .thumb {
+  width: 100%;
+  height: 100%;
+  margin-top: 15px;
+}
+.inner .thumb img {
+  width: 100%;
+  height: 100%;
+	max-height: 200px;
+}
+.inner .toolbar {
+  margin-top: 10px;
+  color: #99A3AD;
+}
+.inner .toolbar span {
+  margin-right: 5px;
+}
+.inner .toolbar span#viewCount {
+  color: black;
+  font-weight: bold;
+  float: left;
+}
+.inner .toolbar span#bookmark, .inner .toolbar span#share {
+  margin-left: 8px;
+}
+main .main .pagination {
+	padding: 15px 0 15px;
+	display: flex;
+	justify-content: center;
+}
+.pagination a.disabled {
+  background: #ddd;
+  color: black;
+}
+main .sidebar li, .post_content .sidebar li{
+  margin-top: 15px;
+  display: block;
+}
+main .sidebar .thumb, .post_content .sidebar .thumb {
+  float: left;
+  width: 15%;
+  height: 100%;
+}
+main .sidebar #title, .post_content .sidebar #title {
+  font-size: 18px;
+  color: #99aac4;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #d5d8dc;
+}
+main .sidebar h3, .post_content .sidebar h3 {
+  font-size: 16px;
+  font-weight: 100;
+  color: black;
+}
+main .sidebar li a, .post_content .sidebar li a {
+  text-decoration: none;
+}
+main .sidebar img, .post_content .sidebar img {
+  width: 36px;
+  margin-right: 10px;
+  border-radius: 50%;
+}
+main .sidebar .post_sidebar, .post_content .sidebar .post_sidebar {
+  display: flex;
+  margin-top: 10px;
+}
+main .sidebar p#time_post, .post_content .sidebar p#time_post {
+  font-size: 12px;
+}
+main .sidebar p#title, .post_content .sidebar  p#title {
+  margin-top: 15px;
+}
+main .sidebar a#title_post, .post_content .sidebar a#title_post {
+	transition: color 0.5s linear;
+  color: black;
+  text-decoration: none;
+}
+main .sidebar a#title_post:hover, .post_content .sidebar a#title_post:hover {
+  color: #2FB5FA;
+}
+main .toppost p, .post_content .sidebar .toppost p {
+  margin-bottom: 0;
+  color: #99A3AD;
+}
+main .sidebar .post_sidebar .post_thumb {
+	width: 36px;
+	height: 36px;
+	margin-right: 10px;
+}
+main .sidebar .post_sidebar .post_thumb img {
+	width: 36px;
+	height: 36px;
+}
+main .toppost p#title {
+  margin-top: 0;
+}
+main .post_content p a img {
+	margin-left: 100px;
+	display: block;
+	width: 100%;
+}
+.main-post {
+	padding-bottom: 50px;
+}
+#post {
+	background: white;
+	padding-top: 135px;
+}
+#post .post-content {
+	padding: 30px;
+}
+#post .container {
+	width: 700px;
+}
+#post .content-post img {
+	margin: auto;
+	display: block;
+	width: 100%;
+}
+.special li {
+  position: relative;
+  height: 100px;
+  width: 100%;
+  background: green;
+}
+.special .block {
+  background: url(http://spiderum.com/assets/images/categories/event-min.jpg) right/cover;
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+}
+.special .block1 {
+  background: url(http://spiderum.com/assets/images/categories/film-min.jpg) right/cover;
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+}
+.special .block2 {
+  background: url(http://spiderum.com/assets/images/categories/books-min.jpg) right/cover;
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+}
+.special #special_post {
+  position: absolute;
+  bottom: 5px;
+  left: 5px;
+  color: white;
+}
+footer {
+  padding: 20px 0;
+  font-size: 11px;
+	border-top: 1px solid #d5d8dc;
+}
+footer ul#list-link {
+  list-style: none;
+}
+footer ul#list-link li {
+  display: inline-block;
+  padding-right: 20px;
+}
+#login-form, #signup-form, .profile {
+	padding: 50px 30px;
+}
+#login-form #inner, .profile #inner, #signup-form #inner, .create_post {
+	background: white;
+	padding: 30px;
+	border-radius: 3px;
+	box-shadow: 0 0.5px 1px rgba(0,0,0,0.25);
+}
+#signup-form input[type="date"] {
+	margin-left: 5px;
+	border-radius: 2px;
+	padding-left: 5px;
+}
+#signup-form input[type="radio"] {
+	margin-left: 5px;
+}
+.create_post {
+	margin-top: 50px;
+}
+#comments {
+	background: #F2F2F2;
+	border-radius: 3px;
+}
+.comments-post {
+	background: #F2F2F2;
+}
+.comment {
+  position: absolute;
+  right: 20px;
+}
+
+.comment-enter {
+  opacity: 0.1;
+}
+
+.comment-enter.comment-enter-active {
+  opacity: 1;
+  transition: opacity 0.1s ease-in;
+}
+
+.comment-leave {
+  opacity: 1;
+}
+
+.comment-leave.comment-leave-active {
+  opacity: 0.01;
+  transition: opacity 2s ease-in;
+}
+
+.comment span {
+	margin-left: 5px;
+}
+#post footer {
+	margin-top: 50px;
+}
+.panel-body {
+	display: flex;
+}
+.avatar-profile {
+	width: 150px;
+	height: 150px;
+	margin-right: 50px;
+}
+.avatar-profile img {
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	box-shadow: 0 5px 5px rgba(182, 182, 182, 0.75);
+}
+.infor-profile {
+	width: 75%;
+	margin: auto;
+}
+.cpanel-admin.container {
+  background: white;
+  box-shadow: 0 0.5px 1px rgba(0,0,0,0.25);
+  padding: 30px;
+}
+.cpanel-admin .btn-sm {
+  margin-right: 10px;
+}
+.cpanel-admin form .btn-danger {
+  float: left;
+  margin-right: 20px;
+}
+a.btn.btn-sm.btn-warning {
+  margin-right: 10px;
+}
+a#remove-modal-profile {
+  position: absolute;
+  top: 2px;
+  right: 2px;
+}
+#post .author .avatar {
+	width: 50px;
+	height: 50px;
+}
+#post .author .avatar img {
+	box-shadow: 0 5px 5px rgba(182, 182, 182, 0.75);
+}
+#post .content-post {
+	padding: 15px 0 5px 0;
+	border-top: 1px solid #d5d8dc;
+	border-bottom: 1px solid #d5d8dc;
+}
+input#editCmt {
+	padding-left: 5px;
+}
+input#editCmt, #btn-editCmt {
+	margin-left: 10px;
+}
+#content_comment {
+	font-weight: bold;
+	margin-left: 5px;
+}
+#icon-tag {
+	margin-right: 10px;
+	color: brown;
+}
+#tag {
+	display: inline-flex;
+	background: #F2F2F2;
+	margin-right: 3px;
+	border-radius: 15px;
+  padding: 5px 15px;
+	vertical-align: middle;
+}
+#tag span {
+	margin-right: 3px;
+}
+#tag input {
+	padding-left: 5px;
+	margin-right: 10px;
+}
+#tag button {
+	margin-right: 5px;
+}
+#icon-remove-tag {
+	color: red;
+	margin-left: 3px;
+	font-size: 10px;
+}
+#icon-edit-tag {
+ color: blue;
+ margin-left: 3px;
+ font-size: 10px;
+}
+#icon-add-tag {
+	margin-left: 15px;
+	color: green;
+	font-size: 20px;
+	vertical-align: middle;
+}
+input#tagAdd {
+	margin-left: 5px;
+	padding-left: 5px;
+}
+#add-tag-group {
+	display: inline-flex;
+}
+#btn-add-tag {
+	margin-left: 5px;
+}
+@media only screen and (max-width: 480px) {
+	main #main .main {
+		padding-left: 0;
+		padding-right: 0;
+	}
+	main .container {
+		padding: 0;
+	}
+  header .header-left .logo {
+    width: 45px;
+    overflow: hidden;
+    position: relative;
+    left: 50%;
+  	transform: translate(-50%, 25%);
+  }
+	.panel-body {
+		display: block;
+	}
+	.panel-body .avatar-profile {
+		margin: auto;
+		margin-bottom: 15px;
+	}
+	.panel-body .infor-profile {
+		width: 100%;
+		text-align: center;
+	}
+}
+#tags-post {
+	padding: 10px 0;
+}
+@media only screen and (max-width: 768px) {
+  .wellcome {
+    height: 300px;
+    background-size: cover;
+    background-position: right;
+  }
+  main .panel {
+    background: white;
+    position: fixed;
+    bottom: 0;
+    z-index: 1;
+    margin-bottom: 0;
+    width: 100%;
+    border-radius: 0;
+		margin-left: -15px;
+  }
+  main .panel ul {
+    margin-bottom: 0;
+		display: flex;
+		justify-content: space-around;
+  }
+	main .panel ul a {
+		display: flex;
+		width: 100%;
+		justify-content: center;
+	}
+  main .panel ul li {
+    padding: 5px 5px;
+  }
+	#post .container {
+		width: auto;
+	}
+	footer {
+		padding: 20px;
+	}
+	.avatar-profile {
+		width: 100px;
+		height: 100px;
+		margin-right: 30px;
+	}
+}
+#main {
+	width: 100%;
+}
+.input-category {
+	display: flex;
+}
+.input-category input, .input-category select {
+	width: 50%;
+}
+.input-category .btn-primary {
+	margin-left: 50px;
+}
+@media only screen and (max-width: 992px) {
+	main .container {
+		display: flex;
+	}
+	main #main .main {
+		margin: auto;
+	}
+}
+@media only screen and (min-width: 300px) {
+	#post .content-post img {
+		display: block;
+		width: 300px;
+		height: 200px;
+	}
+}

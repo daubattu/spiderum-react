@@ -1,0 +1,31 @@
+{
+  "name": "blog-create-react-app",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "axios": "^0.16.1",
+    "draft-js": "^0.10.1",
+    "html-to-text": "^3.3.0",
+    "isemail": "^2.2.1",
+    "lodash": "^4.17.4",
+    "moment": "^2.18.1",
+    "react": "^15.5.4",
+    "react-addons-css-transition-group": "^15.6.0",
+    "react-animations": "^0.1.0",
+    "react-ckeditor-wrapper": "^1.0.22",
+    "react-datepicker": "^0.48.0",
+    "react-dom": "^15.5.4",
+    "react-modal": "^2.0.7",
+    "react-router-dom": "^4.1.1",
+    "validator": "^7.0.0"
+  },
+  "devDependencies": {
+    "react-scripts": "1.0.7"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}
